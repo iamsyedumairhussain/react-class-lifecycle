@@ -1,0 +1,79 @@
+// ========== 1st time =========== //
+
+App constructor called ====>
+App parent getDerivedStateFromProps called ====>
+App getDerivedStateFromProps props ====> {name: 'Umair'}
+App getDerivedStateFromProps state ====> {count: 0}
+App parent render called
+
+student[child of App] constructor called
+student[child of App] getDerivedStateFromProps called ====>
+student[child of App] getDerivedStateFromProps props ====> {count: 0}
+student[child of App] getDerivedStateFromProps state ====> {num: 0}
+student[child of App] render called
+
+Child[child of Student] constructor called
+Child[child of student] getDerivedStateFromProps called ====>
+Child[child of student] getDerivedStateFromProps props ====> {}
+Child[child of student] getDerivedStateFromProps state ====> {num: 0}
+Child[child of Student] render called
+
+Child[child of student] componentDidMount called
+student[child of App] componentDidMount called
+App parent componentDidMount called
+
+
+// ========== After update =========== //
+
+App handleCounter called ======
+App parent getDerivedStateFromProps called ====>
+App getDerivedStateFromProps props ====> {name: 'Umair'}
+App getDerivedStateFromProps state ====> {count: 1}
+App parent shouldComponentUpdate called ====>
+App shouldComponentUpdate nextProps ====> {name: 'Umair'}
+App shouldComponentUpdate nextState ====> {count: 1}
+App parent render called
+
+student[child of App] getDerivedStateFromProps called ====>
+student[child of App] getDerivedStateFromProps props ====> {count: 1}
+student[child of App] getDerivedStateFromProps state ====> {num: 0}
+student[child of App] shouldComponentUpdate called ====>
+student[child of App] shouldComponentUpdate nextProps ====> {count: 1}
+student[child of App] shouldComponentUpdate nextState ====> {num: 1}
+student[child of App] render called
+
+Child[child of student] getDerivedStateFromProps called ====>
+Child[child of student] getDerivedStateFromProps props ====> {}
+Child[child of student] getDerivedStateFromProps state ====> {num: 0}
+Child[child of student] shouldComponentUpdate called ====>
+Child[child of student] shouldComponentUpdate nextProps ====> {}
+Child[child of student] shouldComponentUpdate nextState ====> {num: 0}
+Child[child of Student] render called
+Child[child of student] getSnapshotBeforeUpdate called ====>
+Child[child of student] getSnapshotBeforeUpdate prevProps ====> {}
+Child[child of student] getSnapshotBeforeUpdate prevState ====> {num: 0}
+
+student[child of App] getSnapshotBeforeUpdate called ====>
+student[child of App] getSnapshotBeforeUpdate prevProps ====> {count: 0}
+student[child of App] getSnapshotBeforeUpdate prevState ====> {num: 0}
+
+App parent getSnapshotBeforeUpdate called ====>
+App getSnapshotBeforeUpdate prevProps ====> {name: 'Umair'}
+App getSnapshotBeforeUpdate prevState ====> {count: 0}
+
+Child[child of student] componentDidUpdate called ====>
+Child[child of student] componentDidUpdate prevProps ====> {}
+Child[child of student] componentDidUpdate prevState ====> {num: 0}
+Child[child of student] componentDidUpdate snapshot ====> 21
+
+student[child of App] componentDidUpdate called ====>
+student[child of App] componentDidUpdate prevProps ====> {count: 0}
+student[child of App] componentDidUpdate prevState ====> {num: 0}
+student[child of App] componentDidUpdate snapshot ====> 14
+
+App parent componentDidUpdate called ====>
+App componentDidUpdate prevProps ====> {name: 'Umair'}
+App componentDidUpdate prevState ====> {count: 0}
+App componentDidUpdate snapshot ====> 7
+
+
